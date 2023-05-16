@@ -1,21 +1,20 @@
-# **About Assignment**
-## **Name :-** Student_Details
-## **Framework :-** Spring
-**Language :-** Java
+# **About**
+### **Name :-** StudentDetails
+### **Framework :-** Spring
+### **Language :-** Java
+### **Database :-** MySQL
 ---
-## **Data Flow**
+### **Data Flow**
 ### **Application Properties**
-```
-spring.datasource.driver-class-name = com.mysql.cj.jdbc.Driver
-spring.datasource.url = jdbc:mysql://localhost:3306/student
-spring.datasource.username = root
-spring.datasource.password = root
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.properties.hibernate.show_sql=true
-spring.jpa.properties.hibernate.use_sql_comments=true
-spring.jpa.properties.hibernate.format_sql=true
-```
-
+1. spring.datasource.driver-class-name = com.mysql.cj.jdbc.Driver
+2. spring.datasource.url = jdbc:mysql://localhost:3306/student
+3. spring.datasource.username = root
+4. spring.datasource.password = root
+5. spring.jpa.hibernate.ddl-auto=update
+6. spring.jpa.properties.hibernate.show_sql=true
+7. spring.jpa.properties.hibernate.use_sql_comments=true
+8. spring.jpa.properties.hibernate.format_sql=true
+___
 ### **Controller Package**
 This Package Handles the HTTP Request from the client.
 It contains the Five classes 
@@ -26,11 +25,10 @@ It contains the Five classes
 5. BookController
 
 All of these consist of :
-@GetMapping:
-The @GetMapping annotation is used to map HTTP GET requests to a specific method in the controller class.
-It is used to retrieve or fetch data from the server.
-It can be applied to a class or a specific method.
-In the example, @GetMapping is used on the getAllStudents method to map a GET request to the /api/students endpoint, which retrieves a list of all students.
+1. **@GetMapping:**
+   1. The @GetMapping annotation is used to map HTTP GET requests to a specific method in the controller class.
+   2. It is used to retrieve or fetch data from the server.
+   3. It can be applied to a class or a specific method.
 1. **@PostMapping:**
    1. The @PostMapping annotation is used to map HTTP POST requests to a specific method in the controller class. 
    2. It is used to submit or create new data on the server. 
@@ -39,7 +37,6 @@ In the example, @GetMapping is used on the getAllStudents method to map a GET re
    1. The @PutMapping annotation is used to map HTTP PUT requests to a specific method in the controller class. 
    2. It is used to update or modify existing data on the server. 
    3. It can be applied to a class or a specific method.
-
 3. **@DeleteMapping:**
    1. The @DeleteMapping annotation is used to map HTTP DELETE requests to a specific method in the controller class. 
    2. It is used to delete or remove data from the server. 
